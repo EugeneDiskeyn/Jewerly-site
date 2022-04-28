@@ -1,0 +1,13 @@
+.all {
+    display: flex;
+    align-items: center;
+}
+.ap {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 40%;
+    margin-right: 300px;
+    margin-left: 150px;
+}
