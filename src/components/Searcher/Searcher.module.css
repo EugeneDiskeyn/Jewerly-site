@@ -1,0 +1,11 @@
+.parent_search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.logoSize {
+    width: 20%;
+}
+.iconSize {
+    width: 2.4%;
+}

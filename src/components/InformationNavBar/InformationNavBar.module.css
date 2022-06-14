@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
 }
-.ap {
+.list {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -10,4 +10,10 @@
     min-width: 40%;
     margin-right: 300px;
     margin-left: 150px;
+}
+.nav {
+    background-color: #fffcf9;
+}
+img {
+    width: 3%;
 }
