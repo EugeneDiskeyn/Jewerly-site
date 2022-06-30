@@ -1,6 +1,7 @@
 .all {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
 .list {
     display: flex;
@@ -16,4 +17,7 @@
 }
 img {
     width: 3%;
+}
+li {
+    cursor: pointer;
 }

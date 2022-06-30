@@ -1,8 +1,8 @@
 import React from "react";
 
 function SomeClasses() {
-    function handler() {
-        console.log("I work");
+    function handler(event) {
+        console.dir(event.target);
     }
     const Someclasses = [
         {

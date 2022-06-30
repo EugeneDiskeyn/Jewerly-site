@@ -4,18 +4,17 @@ import styles from "./NavCatalog.module.css";
 import Products from "../Products/Products";
 
 function NavCatalog(props) {
-    const [category, setCategory] = useState("");
-    const [isViewCategory, setIsViewCategory] = useState(false);
+    const [category, setCategory] = useState(1);
+
     function changeCategory(event) {
-        setCategory(event.target.textContent);
-        setIsViewCategory(true);
+        setCategory(event.target.value);
     }
     return (
         <>
            <ul  className={styles.catalog}>
                {
                    props.array.map(item => (
-                       <li onClick={changeCategory} name={item.title} key={item.id}>{item.title}</li>
+                       <li onClick={changeCategory} value={item.id} key={item.id}>{item.title}</li>
                    ))
                }
            </ul>
