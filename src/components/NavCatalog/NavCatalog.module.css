@@ -7,18 +7,18 @@
     margin-right: 40%;
     padding-bottom: 10px;
 }
-li {
+.catalog li {
     cursor: pointer;
     padding-bottom: 3px;
 }
-li:hover {
+.catalog li:hover {
     border-bottom: #ffa269 solid 3px;
     padding-bottom: 0;
     color: #ffa269;
 }
-li:active {
+.catalog li:active {
     color: #E6925E;
 }
-li:focus {
+.catalog li:focus {
     color: green;
 }
