@@ -19,6 +19,11 @@
 .catalog li:active {
     color: #E6925E;
 }
-.catalog li:focus {
-    color: green;
+.active {
+    color: #ffa269;
+    border-bottom: #ffa269 solid 3px;
+}
+.inactive {
+    border: none;
+    color: black;
 }

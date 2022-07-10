@@ -7,14 +7,21 @@ function NavCatalog(props) {
     const [category, setCategory] = useState(1);
 
     function changeCategory(event) {
-        setCategory(event.target.value);
+        if (event.target.value !== undefined) {
+            setCategory(event.target.value);
+            const childNodes = event.target.parentElement.childNodes;
+            for (let i = 0; i < childNodes.length; i++) {
+                childNodes[i].className = styles.inactive;
+            }
+            event.target.className = styles.active;
+        }
     }
     return (
         <>
-           <ul  className={styles.catalog}>
+           <ul onClick={changeCategory} className={styles.catalog}>
                {
                    props.array.map(item => (
-                       <li onClick={changeCategory} value={item.id} key={item.id}>{item.title}</li>
+                       <li className={styles.inactive} value={item.id} key={item.id}>{item.title}</li>
                    ))
                }
            </ul>
