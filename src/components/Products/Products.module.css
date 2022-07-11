@@ -23,7 +23,7 @@ p {
 .prod {
     width: 337px;
 }
-.inners button {
+.button {
     background-color: #ffa269;
     color: white;
     border: #ffa269 solid 2px;
@@ -31,4 +31,22 @@ p {
     width: 90%;
     height: 30px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #E6925E;
+}
+.pressed {
+    background-color: white;
+    color: #ffa269;
+    border: #ffa269 solid 2px;
+    margin-bottom: 7px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pressed:hover {
+    border-color: #E6925E;
+    color: #E6925E;
 }
